@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>خدمتي DZ — ابحث عن الحرفي أو المهني المناسب في ولايتك</title>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar"><div class="wrap top">
+ <div class="logo"><span class="mark star">خ</span>خدمتي DZ</div>
+ <nav class="nav"><a href="#how">كيف تعمل المنصة</a><a href="#safety">نصائح الأمان</a><button class="btn line" id="lang" type="button">FR</button><button class="btn line" id="theme" aria-label="تبديل الوضع الليلي">🌓</button><button class="btn line" id="myReq">طلباتي</button><button class="btn" data-join>سجّل<span class="hm"> كمقدّم خدمة</span></button></nav>
+</div></header>
+
+<section class="hero tile-bg"><div class="wrap">
+ <h1>ابحث عن الحرفي أو المهني المناسب في ولايتك</h1>
+ <p>كهربائي، سبّاك، مصلّح هواتف، مصمّم أو مبرمج. اختر الخدمة والولاية ثم تواصل مباشرة بالاتصال أو واتساب.</p>
+ <button class="ai" id="aiBtn" type="button">✨ لا تعرف أي حرفي تحتاج؟ صِف مشكلتك للمساعد الذكي</button>
+ <div class="search" role="search">
+  <input id="q" type="search" placeholder="ماذا تحتاج؟ كهربائي، سباك، تصميم…" aria-label="بحث">
+  <select id="wilaya" aria-label="الولاية"><option value="">كل الولايات</option></select>
+  <button class="mic" id="mic" type="button" aria-label="بحث صوتي">🎤</button><button class="btn" id="go">ابحث</button>
+ </div>
+</div></section>
+
+<main class="wrap">
+ <section class="cats" aria-label="التصنيفات"><h2>تصفّح حسب الحرفة</h2><div class="tiles" id="tiles"></div></section>
+ <div class="tools"><div class="count" id="count" aria-live="polite"></div><div class="ctl"><select class="sort" id="sort" aria-label="الترتيب"><option value="new">الأحدث أولًا</option><option value="name">حسب الاسم</option></select><label class="sw"><input type="checkbox" id="fOnly"><i></i>مفضّلتي</label><label class="sw"><input type="checkbox" id="vOnly"><i></i>موثّقون فقط</label></div></div>
+ <div class="note">البطاقات الموسومة «نموذج تجريبي» أمثلة لعرض شكل المنصة وليست أشخاصًا حقيقيين. لا توجد تقييمات ولا توثيق إلا عند حصولهما فعلًا.</div>
+ <div class="meta" id="mode" style="margin-bottom:10px">وضع محلي: الملفات تُحفظ في متصفحك فقط.</div>
+ <div class="grid" id="grid"></div>
+</main>
+
+<section class="wrap stats" aria-label="أرقام المنصة"><div><span class="num" id="n1" data-to="58">0</span><small>ولاية مشمولة</small></div><div><span class="num" id="n2">0</span><small>حرفة ومهنة</small></div><div hidden><span class="num" id="n3">0</span><small>ملف مسجّل</small></div></section>
+<div class="rib" aria-hidden="true"><div id="ribIn"></div></div>
+<section class="wrap safety" id="safety"><h2>نصائح للتعامل بأمان</h2>
+ <details><summary>كيف أختار مقدّم الخدمة؟</summary><p>قارن بين أكثر من ملف، واطلب صورًا لأعمال سابقة، وتحقق من أن الولاية والتخصص يناسبان حاجتك.</p></details>
+ <details><summary>متى أتفق على السعر؟</summary><p>قبل بدء العمل. اطلب تقديرًا واضحًا للتكلفة، واسأل إن كانت قطع الغيار أو التنقل محسوبة ضمنه.</p></details>
+ <details><summary>متى أدفع؟</summary><p>يُفضَّل الدفع بعد إنجاز العمل والتأكد منه، وتجنّب دفع مبالغ كبيرة مقدّمًا لشخص لا تعرفه.</p></details>
+ <details><summary>ماذا يعني وسم «موثّق»؟</summary><p>لا يظهر هذا الوسم إلا بعد تحقق فعلي من المقدّم. الملفات التي لم يُتحقق منها تحمل وسم «غير موثّق بعد».</p></details>
+</section>
+<section class="how tile-bg" id="how"><div class="wrap">
+ <h2>كيف تعمل المنصة</h2>
+ <div class="steps">
+  <div><b class="star">1</b><h3>ابحث عن الخدمة</h3><p>اختر الحرفة والولاية وتصفّح ملفات مقدّمي الخدمات.</p></div>
+  <div><b class="star">2</b><h3>تواصل مباشرة</h3><p>اتصل أو راسل عبر واتساب، أو أرسل طلبًا مفصّلًا.</p></div>
+  <div><b class="star">3</b><h3>اتفق على التفاصيل</h3><p>السعر والموعد يُتفق عليهما بينك وبين مقدّم الخدمة.</p></div>
+ </div>
+ <div class="cta"><strong>تقدّم خدمة؟ أضف ملفك ليجدك الزبائن في منطقتك.</strong><button class="btn" data-join>سجّل كمقدّم خدمة</button></div>
+</div></section>
+<footer><div class="wrap foot"><div><strong>خدمتي DZ</strong> — منصة جزائرية تربط الزبائن بأصحاب الحرف والمهن.</div><div>نسخة تجريبية: البيانات المسجّلة تُحفظ في متصفحك فقط.</div></div></footer>
+
+<dialog id="reqDlg"><form id="reqForm" method="dialog">
+ <h2>طلب خدمة</h2><div class="meta" id="reqTo"></div>
+ <label>اسمك<input name="name" required maxlength="60"></label>
+ <label>رقم هاتفك<input name="phone" type="tel" required inputmode="tel" pattern="0[5-7][0-9]{8}" title="رقم جزائري يبدأ بـ 05 أو 06 أو 07" placeholder="05XXXXXXXX"></label>
+ <label>وصف الطلب<textarea name="desc" rows="3" required maxlength="400" placeholder="مثال: عطل في الكهرباء بالمطبخ، أحتاج زيارة هذا الأسبوع"></textarea></label>
+ <div class="row"><button type="button" class="btn line" data-close>إلغاء</button><button class="btn" type="submit">إرسال الطلب</button></div>
+</form></dialog>
+
+<dialog id="joinDlg"><form id="joinForm" method="dialog">
+ <h2>سجّل كمقدّم خدمة</h2>
+ <label>الاسم أو اسم النشاط<input name="name" required maxlength="60"></label>
+ <label>التصنيف<select name="cat" id="joinCat" required></select></label>
+ <label>التخصص<input name="spec" required maxlength="60" placeholder="مثال: تركيب وصيانة الكهرباء المنزلية"></label>
+ <label>الولاية<select name="wilaya" id="joinWilaya" required></select></label>
+ <label>البلدية<input name="baladiya" maxlength="40"></label>
+ <label>سنوات الخبرة (اختياري)<input name="exp" type="number" min="0" max="60"></label>
+ <label>ساعات العمل (اختياري)<input name="hours" maxlength="40" placeholder="مثال: 8:00 - 18:00، عدا الجمعة"></label>
+ <label class="chk"><input type="checkbox" name="mobile" value="1"> أتنقّل إلى مكان الزبون</label>
+ <label class="chk"><input type="checkbox" name="urgent" value="1"> أقبل الطلبات المستعجلة</label>
+ <label>السعر التقريبي (اختياري)<input name="price" maxlength="40" placeholder="مثال: من 1500 دج"></label>
+ <label>رقم الهاتف / واتساب<input name="phone" type="tel" required inputmode="tel" pattern="0[5-7][0-9]{8}" title="رقم جزائري يبدأ بـ 05 أو 06 أو 07" placeholder="05XXXXXXXX"></label>
+ <label>نبذة قصيرة<textarea name="desc" rows="2" maxlength="300"></textarea></label>
+ <div class="row"><button type="button" class="btn line" data-close>إلغاء</button><button class="btn" type="submit">حفظ الملف</button></div>
+</form></dialog>
+<dialog id="profDlg"><div class="pad" id="profBody"></div></dialog>
+<dialog id="aiDlg"><div class="pad"><h2>✨ المساعد الذكي</h2><div class="meta">صِف مشكلتك بلغتك (فصحى أو دارجة) وسأحدّد لك الحرفة المناسبة وأعطيك نصائح قبل وصول الحرفي.</div><textarea id="aiQ" rows="3" maxlength="400" placeholder="مثال: ماء يتسرّب من تحت مغسلة المطبخ"></textarea><div id="aiOut" aria-live="polite"></div><div class="row"><button type="button" class="btn line" data-close>إغلاق</button><button type="button" class="btn" id="aiGo">حلّل مشكلتي</button></div></div></dialog>
+<dialog id="reqList"><div class="pad"><h2>طلباتي</h2><div id="reqItems" style="display:grid;gap:10px"></div><div class="row"><button type="button" class="btn line" data-close>إغلاق</button></div></div></dialog>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
